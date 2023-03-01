@@ -24,7 +24,7 @@ CREATE TABLE employee(
    FOREIGN KEY(leader) REFERENCES employee(employee_id)
 );
 
-CREATE TABLE suplier(
+CREATE TABLE supplier(
    supplier_id INT AUTO_INCREMENT,
    name VARCHAR(50)  NOT NULL,
    adress VARCHAR(50)  NOT NULL,
@@ -81,7 +81,7 @@ CREATE TABLE product(
    KEY (name),
    PRIMARY KEY(product_id),
    FOREIGN KEY(category_id) REFERENCES product_category(category_id),
-   FOREIGN KEY(supplier_id) REFERENCES suplier(supplier_id)
+   FOREIGN KEY(supplier_id) REFERENCES supplier(supplier_id)
 );
 
 CREATE TABLE orders(
