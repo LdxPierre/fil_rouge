@@ -45,7 +45,7 @@ CREATE TABLE supplier(
 CREATE TABLE customer(
    customer_id INT AUTO_INCREMENT,
    password VARCHAR(255)  NOT NULL,
-   category VARCHAR(10)  NOT NULL,
+   category VARCHAR(10)  NOT NULL CHECK (category = 'part' OR category = 'pro'),
    customer_firstname VARCHAR(20) ,
    customer_lastname VARCHAR(20) ,
    company_name VARCHAR(50) ,
