@@ -1,6 +1,6 @@
 USE green_village;
 
-INSERT INTO `employee` (`employee_id`, `lastname`, `firstname`, `password`, `job_title`, `department`, `email`, `phone`) 
+INSERT INTO `employee` (`employee_id`, `lastname`, `firstname`, `password`, `title`, `department`, `email`, `phone`) 
 VALUES (1, 'Gatecliffe', 'Aigneis', 'vCNYAH1AzL', 'Food Chemist', 'Business Development', 'agatecliffe0@tuttocitta.it', '561-262-0586'),
     (2, 'Lodin', 'Tobiah', 'fTZBIf3Ntn', 'Operator', 'Marketing', 'tlodin1@indiatimes.com', '723-421-5962'),
     (3, 'Bullar', 'Laureen', 'Ih5F5w86BL8', 'Assistant Manager', 'Sales', 'lbullar2@yale.edu', '238-980-0348'),
@@ -49,45 +49,45 @@ VALUES
   (9,"commande","0.2149957455","Lev Donaldson","Ap #338-9657 Pellentesque Avenue","Langenhagen","Orenburg Oblast","59761-67213","South Korea","transit","703-6094 Vitae Ave","Paraíso","Azad Kashmir","48374-97510","South Korea",1),
   (10,"commande","0.2453839158","Rahim Knapp","274-6983 Orci Rd.","Castelmarte","Arunachal Pradesh","15953","Spain","transit","Ap #254-1243 Phasellus St.","Ninhue","Putumayo","32184","Canada",6);
 
-INSERT INTO `product_category` (`category_id`,`name`, `category_parent`)
-VALUES
-  (1,"Key", NULL),
-  (2,"Corde", NULL),
-  (3,"Professionnel", NULL),
-  (4,"Machine", 3),
-  (5,"Quelquechose", 1);
+insert into `product_category` (category_id, name, category_parent, img) 
+values (1, 'Guitars', NULL, 'http://dummyimage.com/176x100.png/dddddd/000000'),
+(2, 'Basses', NULL, 'http://dummyimage.com/135x100.png/5fa2dd/ffffff'),
+(3, 'Electric Guitars', 1, 'http://dummyimage.com/186x100.png/5fa2dd/ffffff'),
+(4, 'Drums', NULL, 'http://dummyimage.com/239x100.png/cc0000/ffffff'),
+(5, 'Keys', NULL, 'http://dummyimage.com/146x100.png/5fa2dd/ffffff');
+
 
 insert into product (`product_id`, `name`, `product_desc`, `img`, `price_ht`, `supplier_price_ht`, `stock`, `show`, `supplier_ref`, `category_id`, `supplier_id`) 
-values (1, 'Melon', 'Other contact with pig', 'http://dummyimage.com/219x100.png/cc0000/ffffff', 16671.35, 80259.59, 83, false, '54868-5625', 2, 2),
-(2, 'Cheese - Goat', 'Ankylosis, left hip', 'http://dummyimage.com/115x100.png/ff4444/ffffff', 82428.76, 9372.72, 80, true, '0113-0668', 4, 1),
-(3, 'Soup - French Onion', 'Reiter''s disease', 'http://dummyimage.com/122x100.png/dddddd/000000', 27523.31, 99658.68, 50, true, '36800-766', 3, 5),
-(4, 'Sauce - Caesar Dressing', 'Presence of artificial wrist joint', 'http://dummyimage.com/131x100.png/cc0000/ffffff', 34412.8, 37078.48, 82, true, '54868-3064', 2, 1),
-(5, 'Mushroom - Lg - Cello', 'Abnormal level of substances chiefly nonmedicinal as to source in specimens from male genital organs', 'http://dummyimage.com/140x100.png/dddddd/000000', 41136.1, 35703.73, 7, false, '49371-030', 4, 5),
-(6, 'Sweet Pea Sprouts', 'Nondisplaced supracondylar fracture without intracondylar extension of lower end of right femur, subsequent encounter for open fracture type IIIA, IIIB, or IIIC with malunion', 'http://dummyimage.com/109x100.png/dddddd/000000', 17166.39, 917.91, 47, false, '63739-079', 2, 5),
-(7, 'Ginger - Ground', 'Breakdown (mechanical) of intraocular lens, sequela', 'http://dummyimage.com/101x100.png/ff4444/ffffff', 22849.18, 93759.06, 76, true, '63459-701', 5, 1),
-(8, 'Chives - Fresh', 'Complete traumatic metacarpophalangeal amputation of other finger, initial encounter', 'http://dummyimage.com/180x100.png/5fa2dd/ffffff', 9929.2, 80740.49, 77, true, '13533-691', 2, 3),
-(9, 'Water - Aquafina Vitamin', 'Spondylopathy, unspecified', 'http://dummyimage.com/222x100.png/dddddd/000000', 89566.69, 84951.17, 52, true, '0338-0703', 1, 5),
-(10, 'Tortillas - Flour, 8', 'Autoimmune lymphoproliferative syndrome [ALPS]', 'http://dummyimage.com/137x100.png/cc0000/ffffff', 13535.83, 74415.71, 80, true, '27437-106', 4, 4);
+values (1, 'Range Rover Sport', 'Crushed between other unpowered watercraft and other watercraft or other object due to collision, sequela', 'http://dummyimage.com/208x100.png/5fa2dd/ffffff', 3691062, 766595, 50, false, '42952-101', 4, 1),
+(2, 'A6', 'Iridodialysis, left eye', 'http://dummyimage.com/175x100.png/5fa2dd/ffffff', 4771771, 5332437, 42, true, '49349-425', 4, 1),
+(3, 'Mustang', 'Injury of unspecified nerve at hip and thigh level, right leg', 'http://dummyimage.com/206x100.png/cc0000/ffffff', 5639886, 9304487, 22, false, '0268-1520', 4, 1),
+(4, 'Precis', 'Laceration without foreign body of left hand, sequela', 'http://dummyimage.com/171x100.png/5fa2dd/ffffff', 9256605, 6327685, 57, false, '55312-328', 1, 1),
+(5, 'F150', 'Nondisplaced fracture of triquetrum [cuneiform] bone, right wrist, subsequent encounter for fracture with delayed healing', 'http://dummyimage.com/222x100.png/ff4444/ffffff', 9650707, 4203648, 20, false, '63323-648', 2, 5),
+(6, '9000', 'Other human herpesvirus encephalitis', 'http://dummyimage.com/109x100.png/ff4444/ffffff', 3012590, 4484992, 82, false, '68421-8100', 2, 3),
+(7, 'Trooper', 'Poisoning by other agents primarily affecting gastrointestinal system, undetermined, sequela', 'http://dummyimage.com/102x100.png/dddddd/000000', 7508997, 2343614, 16, false, '37000-404', 1, 2),
+(8, 'Passat', 'Unspecified open wound of unspecified shoulder, subsequent encounter', 'http://dummyimage.com/224x100.png/cc0000/ffffff', 6542811, 8613459, 15, false, '34954-014', 4, 3),
+(9, 'Forester', 'Corrosion of third degree of unspecified single finger (nail) except thumb, initial encounter', 'http://dummyimage.com/196x100.png/dddddd/000000', 3597008, 5832284, 85, false, '49999-924', 4, 5),
+(10, 'RX-8', 'Embolism due to internal orthopedic prosthetic devices, implants and grafts, sequela', 'http://dummyimage.com/162x100.png/dddddd/000000', 2572018, 724006, 31, false, '66129-110', 4, 5);
 
-INSERT INTO `order_detail` (`product_id`,`order_id`,`quantity`,`discount`)
+INSERT INTO `order_detail` (`product_id`,`order_id`,`quantity`,`price_ht`, `discount`)
 VALUES
-  (1,9,2,0),
-  (1,2,8,0),
-  (2,4,2,0),
-  (4,3,1,0),
-  (1,4,5,0),
-  (4,4,7,0),
-  (2,6,9,0),
-  (4,9,3,0),
-  (1,5,7,0),
-  (3,6,8,0),
-  (5,2,7,0),
-  (4,1,2,0),
-  (4,5,1,0),
-  (4,8,2,0),
-  (2,8,9,0),
-  (5,10,7,0),
-  (2,7,7,0);
+  (1,9,2,100,0),
+  (1,2,8,9920,0),
+  (2,4,2,12920,0),
+  (4,3,1,5678,0),
+  (1,4,5,19800,0),
+  (4,4,7,1289,0),
+  (2,6,9,10987,0),
+  (4,9,3,48692,0),
+  (1,5,7,12092,0),
+  (3,6,8,57098,0),
+  (5,2,7,56436,0),
+  (4,1,2,98745,0),
+  (4,5,1,04576,0),
+  (4,8,2,09457,0),
+  (2,8,9,567098,0),
+  (5,10,7,567,0),
+  (2,7,7,9989,0);
 
 INSERT INTO `cart` (`product_id`,`customer_id`,`quantity`)
 VALUES
