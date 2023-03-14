@@ -62,7 +62,7 @@ En cas de perte de données, uniquement 3H seront perdues.
 ![activité](https://user-images.githubusercontent.com/103575691/225030418-e821360d-815e-4956-846e-280333eacf83.jpg)
 
 **Graphe de navigation de l'application**\
-![navigation](https://user-images.githubusercontent.com/103575691/225038542-cffda72e-e579-4370-8d54-5e3d2e2b848e.jpg)
+![navigation](https://user-images.githubusercontent.com/103575691/225050767-4cbd5a15-9c4f-40f3-b32f-7cb84a4975a5.jpg)
 
 **Maquette de la partie boutique**
 
