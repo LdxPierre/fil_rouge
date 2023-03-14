@@ -22,7 +22,6 @@ En cas de perte de données, uniquement 3H seront perdues.
 
 
 **Les cas d'utilisation**
-
 ![useCase](https://user-images.githubusercontent.com/103575691/224975258-d27a6773-4d43-42b7-bb67-ea56b8f60018.jpg)
 
 
@@ -56,7 +55,7 @@ En cas de perte de données, uniquement 3H seront perdues.
 
 
 **Diagramme de séquence**
-
+![sequence](https://user-images.githubusercontent.com/103575691/225004816-c64fd434-4c55-4f13-9cfe-f783c837e02c.jpg)
 
 
 
