@@ -19,3 +19,54 @@
 
 Une sauvegarde complète de la base est effectuée tous les jours en dehors des heures d’activité (18H). Une sauvegarde du journal a également lieu tous les jours à 9H, 12H et 15H.
 En cas de perte de données, uniquement 3H seront perdues.
+
+
+**Les cas d'utilisation**
+
+
+
+**Scénario pour le cas d'utilisation 'Enregistrer une commande'**
+
+Le client demande de se connecter au système
+Le système demande une combinaison identifiant / mot de passe valide
+Le client saisie une combinaison identifiant / mot de passe invalide
+Le système indique que la combinaison identifiant / mot de passe ne sont pas valides
+Le système affiche un message et propose de recommencer
+Le client saisie une combinaison identifiant / mot de passe valide
+Le système indique que la connexion est établie
+Le client demande de voir la liste des produits
+Le système affiche la liste des produits
+Le client sélectionne un produit
+Le système affiche les détails d'un produit
+Le client ajoute le produit au panier
+Le système indique que le produit a été ajouté au panier
+Le système affiche un message et propose de continuer ou de valider le panier
+Le client valide le panier
+Le systeme affiche le formulaire de livraison
+Le client saisie les informations de livraison
+Le système affiche que les informations de livraison sont valides
+Le systele affiche le formulaire de payement
+Le client saisie les informations de payement
+Le système indique que les informations de payement sont valides
+Le système affiche les informations saisie et demande une validation de commande
+Le client valide la commande
+Le système indique que le payement a été accepté
+Le système affiche un message avec le numéro de commande et propose de télécharger le bon de commande
+
+
+**Diagramme de séquence**
+
+
+
+
+**Diagramme d'activité**
+
+
+
+
+**Graphe de navigation de l'application**
+
+
+
+
+**Maquette de la partie boutique**
