@@ -23,6 +23,7 @@ En cas de perte de données, uniquement 3H seront perdues.
 
 **Les cas d'utilisation**
 
+![useCase](https://user-images.githubusercontent.com/103575691/224975258-d27a6773-4d43-42b7-bb67-ea56b8f60018.jpg)
 
 
 **Scénario pour le cas d'utilisation 'Enregistrer une commande'**
@@ -55,6 +56,7 @@ Le système affiche un message avec le numéro de commande et propose de téléc
 
 
 **Diagramme de séquence**
+
 
 
 
